@@ -3,9 +3,10 @@
 
 
 ## Status :seedling:
-> em desenvolvimento 
 
-Projeto desenvolvido por alunos do 1° período do curso de Ciência da Computação da Universidade Fumec.
+> Projeto em desenvolvimento, criado por alunos do 1° período do curso de Ciência da Computação da Universidade Fumec. 
+
+
 
 ## Descrição :bookmark_tabs:
 
