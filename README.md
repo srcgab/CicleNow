@@ -34,7 +34,8 @@ Futuramente, pretende-se adiconar uma *comunidade* ao projeto, onde os entusiast
 
 
 ## Colaboradores
-
-Este projeto está sendo desenvolvido por:
-
+Esse projeto está sendo desenvolvido por: <br/><br/>
+<a href="https://github.com/srcgab" target="_blank"><img width=30 src="https://avatars.githubusercontent.com/u/50997100?v=4&height=30"/></a>
+<a href="https://github.com/catacastanha" target="_blank"><img width=30 src="https://avatars.githubusercontent.com/u/148160989?v=4&height=30"/></a>
+<a href="https://github.com/FefonandoLF" target="_blank"><img width=30 src="https://avatars.githubusercontent.com/u/147994834?s=64&v=4&height=30"/></a>
 
