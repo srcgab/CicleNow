@@ -3,26 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, min-scale=1.0">
-
-    <link 
-          rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
-          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
-
     <link rel="stylesheet" href="./css/global-style.css">
+    <link rel="stylesheet" href="./css/paginaInicial.css">
     <link rel="shortcut icon" href="./image/image-removebg.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <script src="./js/menu.js"></script>
     <title>Cicle Now</title>
 </head>
-
-
 
 <body>
     <div class="container">
         <div class="wrapper">
             <!-- Lado Esquerdo - início-->
             <div class="left-side">
-                    <nav class="menu">
+                    <nav class="menu-lateral">
                         <a href="./index.html"><i class="fa-solid fa-house">Início</i></a>
                         <i class="fa-solid fa-person-hiking">Inspiração</i>
                         <i class="fa-solid fa-cart-shopping">Loja</i>
@@ -37,9 +33,54 @@
             <!-- Main - início -->
             <div class="container-main">
                 <header class="cabecalho">
-            
+                    <picture>
+                        <img src="" alt="">
+                    </picture>
+                    
+                    <nav class="menu-desktop">
+                        <a href="./index.html"><i class="fa-solid fa-house"></i></a>
+                        <a href="./pages/histórias.html">Inspiração</a>
+                        <a href="./pages/store.html">Loja</a>
+                        <a href="./pages/lugares.html">Locais</a>
+                        <a href="./pages/sobre.html">Sobre</a>
+                    </nav>
                 </header>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse sapiente quas perspiciatis nobis necessitatibus! Cum ab culpa dolorem, sint rem, blanditiis eaque labore dolor dolores minima eligendi libero ut vitae?
+
+                <!-- Banners - início-->
+                <section class="banners">
+                    <div class="slide-content">
+                        <div class="slide-box">
+                            <img src="./image/1.jpg" id="slide1" class="desktop curret-item">
+                            <img src="./image/2.jpg" id="slide1" class="desktop">
+                            <img src="./image/1.jpg" id="slide1" class="desktop">
+                        </div>
+                        <div class="slides-nav">
+                            <a href="#slide1"></a>
+                            <a href="#slide2"></a>
+                            <a href="#slide3"></a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Banners - fim-->
+
+                <!-- Modalidades - início -->
+                <section class="container-modalidade">
+                    <div class="modalidade-content">
+                        <picture class="modalidade" id="modalidade1">
+                            <img src="" alt="">
+                        </picture>
+                        <picture class="modalidade" id="modalidade1">
+                            <img src="" alt="">
+                        </picture>
+                        <picture class="modalidade" id="modalidade1">
+                            <img src="" alt="">
+                        </picture>
+                        <picture class="modalidade" id="modalidade1">
+                            <img src="" alt="">
+                        </picture>
+                    </div>
+                </section>
+                <!-- Modalidades - fim -->
 
                 <!-- Menu Mobile - início -->
                 <div class="menu-mobile">
