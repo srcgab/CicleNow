@@ -86,7 +86,7 @@ header {
     flex-direction: column;
     background-color: var(--light-blue);
     /* Pega o menor valor entre os dois valores do parênteses */
-    width: min(1000px, 100%);
+    width: min(1280px, 100%);
 
     @media (min-width: 500px) {
         border-left: 1px solid var(--outline);
