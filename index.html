@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="./js/menu.js"></script>
     <title>Cicle Now</title>
 </head>
 
@@ -34,7 +33,8 @@
             <!-- Main - início -->
             <div class="container-main">
                 <header class="cabecalho">
-                    <picture>
+                    <picture id="logo">
+                        LOGO
                         <img src="" alt="">
                     </picture>
 
@@ -45,22 +45,36 @@
                         <a href="./pages/lugares.html">Locais</a>
                         <a href="./pages/sobre.html">Sobre</a>
                     </nav>
+
+                    <div class="hamb">
+                        <i class=" fa-solid fa-bars fa-x " id="menu-icon"></i>
+                    </div>
                 </header>
 
                 <!-- Banners - início-->
-                <section class="banners">
+                <section class="slides-container">
                     <div class="slide-content">
-                        <div class="slide-box">
-                            <img src="./image/1.jpg" id="slide1" class="desktop curret-item">
-                            <img src="./image/2.jpg" id="slide1" class="desktop">
-                            <img src="./image/1.jpg" id="slide1" class="desktop">
+                        <div class="slide">
+                            <img src="./image/1.jpg" alt="">
                         </div>
-                        <div class="slides-nav">
-                            <a href="#slide1"></a>
-                            <a href="#slide2"></a>
-                            <a href="#slide3"></a>
+                        <div class="slide">
+                            <img src="./image/2.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./image/1.jpg" alt="">
                         </div>
                     </div>
+        
+                    <div class="button-slide">
+                        <button id="prev"><</button>
+                        <button id="next">></button>
+                    </div>
+
+                    <ul class="slides-nav">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
                 </section>
                 <!-- Banners - fim-->
 
@@ -117,6 +131,8 @@
             <!-- Main - fim -->
         </div>
     </div>
+    <script src="./js/slide.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

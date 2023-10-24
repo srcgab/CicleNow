@@ -13,7 +13,7 @@ html, body {
 }
 
 :root {
-    --primary: #fff;
+    --primary: #15181C;
     --light-blue: #87CEEB;
     --dark-blue: #0047AB;
     --green-primary: #44D62D;
@@ -38,12 +38,49 @@ html, body {
 header {
     z-index: 2;
     position: sticky;
+    background: var(--light-blue);
     top: 0;
     display: flex;
-    align-items: center; 
-    text-align: right;
+    flex-direction: column; 
     padding: 8px 0 9px 13px;
     border-bottom: 1px solid var(--outline);
+}
+
+#logo {
+    text-align: center;
+}
+
+.menu-desktop {
+    display: flex;
+    justify-content: flex-end;
+    @media (max-width: 1000px){
+        display: none;
+    }
+}
+
+.menu-desktop a {
+    color: var(--dark-blue);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
+
+.menu-desktop a:hover {
+    color: var(--green-primary)
+}
+
+.hamb {
+    font-size: 35px;
+    cursor: pointer;
+    @media (min-width: 1000px) {
+        display: none;
+    }
+
+    @media (max-width: 500px) {
+        display: none;
+    }
 }
 
 .menu-mobile {
@@ -81,7 +118,7 @@ header {
 
 /*Responsividade: main e lado esquerdo */
 .container-main {
-    display: flex;
+    display: flex; 
     height: 100%;
     flex-direction: column;
     background-color: var(--light-blue);
@@ -95,13 +132,17 @@ header {
 }
 
 .left-side {
+    position: absolute;
+    left: -100%;
     width: 30%;
-    max-height: 100vh;
-    height: 100%;
     border-right: 1px solid var(--outline);
     display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     background-color: var(--dark-blue);
-    
+    border-radius: 0px 10px;
+    transition: all .50s ease;
+
     @media (min-width: 1000px) {
         display: none;
     }
@@ -109,5 +150,18 @@ header {
     @media (max-width: 500px) {
         display: none;
     }
+}
+
+.menu-lateral a{
+    margin: 12px 0;
+    padding: 0px 25px;
+}
+
+.menu-lateral a:hover {
+    background-color: #0047AB;
+}
+
+.left-side.open {
+    left: 2%;
 }
 
