@@ -9,6 +9,5 @@ menu.onclick = () => {
 let modalidade = document.querySelector('.modalidade');
 
 modalidade.onclick = () => {
-    menu.classList.show('fa-x');
-    navbar.classList.toggle('open');
+    
 }
