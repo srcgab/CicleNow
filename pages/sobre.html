@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, min-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/global-style.css">
     <link rel="shortcut icon" href="./image/image-removebg.ico" type="image/x-icon">
-    <script src="./js/menu.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Sobre</title>
 </head>
 
@@ -15,37 +17,56 @@
         <div class="wrapper">
             <!-- Lado Esquerdo - início-->
             <div class="left-side">
-                <div class="sidebar">
-                    <nav class="menu">
-                        <i class="fa-solid fa-house">Início</i>
-                        <i class="fa-solid fa-person-hiking">Inspiração</i>
-                        <i class="fa-solid fa-cart-shopping">Loja</i>
-                        <i class="fa-solid fa-map">Locais</i>
-                        <i class="fa-solid fa-circle-info">Sobre</i>
-                    </nav>
-                </div>
+                <nav class="menu-lateral">
+                    <a href="../index.html"><i class="fa-solid fa-house">Início</i></a>
+                    <a href="./historias.html"><i class="fa-solid fa-person-hiking">Inspiração</i></a>
+                    <a href="./store.html"><i class="fa-solid fa-cart-shopping">Loja</i></a>
+                    <a href="./lugares.html"><i class="fa-solid fa-map">Locais</i></a>
+                </nav>
+                <section class="sobre">
+                    <a href="./sobre.html"><i class="fa-solid fa-circle-info">Sobre</i></a>
+                </section>
             </div>
             <!-- Lado Esquerdo - fim -->
 
             <!-- Main - início -->
             <div class="container-main">
                 <header class="cabecalho">
-            
-                </header>
+                    <picture id="logo">
+                        <h1>LOGO</h1>
+                    </picture>
 
+                    <nav class="menu-desktop">
+                        <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+                        <a href="./histórias.html">Inspiração</a>
+                        <a href="./store.html">Loja</a>
+                        <a href="./lugares.html">Locais</a>
+                        <a href="./sobre.html">Sobre</a>
+                    </nav>
+
+                    <div class="hamb">
+                        <i class=" fa-solid fa-bars fa-x " id="menu-icon"></i>
+                    </div>
+                </header>
 
                 <!-- Menu Mobile - início -->
                 <div class="menu-mobile">
-                    <i class="fa-solid fa-house"></i>
-                    <i class="fa-solid fa-person-hiking"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <i class="fa-solid fa-map"></i>
-                    <i class="fa-solid fa-circle-info"></i>
+                    <a href="./index.html"><i class="fa-solid fa-house"></i></a>
+                    <a href="./pages/histórias.html" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-solid fa-person-hiking"></i></a>
+                    <a href="./pages/store.html" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="./pages/lugares.html" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-solid fa-map"></i></a>
+                    <a href="./pages/sobre.html" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-solid fa-circle-info"></i></a>
                 </div>
                 <!-- Menu Mobile - fim -->
             </div>
             <!-- Main - fim -->
         </div>
     </div>
+    <script src="./js/menu.js"></script>
 </body>
+
 </html>

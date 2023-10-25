@@ -7,3 +7,4 @@ menu.onclick = () => {
 }
 
 let modalidade = document.querySelector('.modalidade');
+

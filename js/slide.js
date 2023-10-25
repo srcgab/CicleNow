@@ -48,7 +48,3 @@ navs.forEach((li, key ) => {
         reloadSlide();
     })
 })
-
-let refreshSlide = setInterval(() => {
-    next.click()
-}, 3000);

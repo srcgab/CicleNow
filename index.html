@@ -20,12 +20,12 @@
             <div class="left-side">
                 <nav class="menu-lateral">
                     <a href="./index.html"><i class="fa-solid fa-house">Início</i></a>
-                    <i class="fa-solid fa-person-hiking">Inspiração</i>
-                    <i class="fa-solid fa-cart-shopping">Loja</i>
-                    <i class="fa-solid fa-map">Locais</i>
+                    <a href="./pages/historias.html"><i class="fa-solid fa-person-hiking">Inspiração</i></a>
+                    <a href="./pages/store.html"><i class="fa-solid fa-cart-shopping">Loja</i></a>
+                    <a href="./pages/lugares.html"><i class="fa-solid fa-map">Locais</i></a>
                 </nav>
                 <section class="sobre">
-                    <i class="fa-solid fa-circle-info">Sobre</i>
+                    <a href="./pages/sobre.html"><i class="fa-solid fa-circle-info">Sobre</i></a>
                 </section>
             </div>
             <!-- Lado Esquerdo - fim -->
@@ -34,8 +34,7 @@
             <div class="container-main">
                 <header class="cabecalho">
                     <picture id="logo">
-                        LOGO
-                        <img src="" alt="">
+                        <h1>LOGO</h1>
                     </picture>
 
                     <nav class="menu-desktop">
@@ -81,21 +80,21 @@
                 <!-- Modalidades - início -->
                 <section class="container-modalidade">
                     <div class="modalidade-content">
-                        <picture class="modalidade" id="modalidade1">
+                        <picture class="modalidade" onclick="abrirSecao('box1')">
                             <img src="" alt="">
                         </picture>
-                        <picture class="modalidade" id="modalidade1">
+                        <picture class="modalidade" onclick="abrirSecao('box2')">
                             <img src="" alt="">
                         </picture>
-                        <picture class="modalidade" id="modalidade1">
+                        <picture class="modalidade" onclick="abrirSecao('box3')">
                             <img src="" alt="">
                         </picture>
-                        <picture class="modalidade" id="modalidade1">
+                        <picture class="modalidade" onclick="abrirSecao('box4')">
                             <img src="" alt="">
                         </picture>
                     </div>
 
-                    <div class="modalidade-box">
+                    <section class="modalidade-box" id="box1">
                         <div class="box-text">
                             <h2>Ciclismo na terra fds</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae praesentium fuga consequatur!
@@ -110,7 +109,27 @@
                         <picture class="modalidade-img">
                             <img src="" alt="">
                         </picture>
-                    </div>
+                    </section>
+
+                    <section class="modalidade-box" id="box2" style="display:none;">
+                        <div class="box-text">
+                            <h2>Ciclismo no asfalto AAA</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae praesentium fuga consequatur!
+                                Ab magnam nisi recusandae aperiam quaerat numquam sit. Praesentium quod quia commodi
+                                reiciendis tempora cum vero at repellendus.
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae praesentium fuga consequatur!
+                                Ab magnam nisi recusandae aperiam quaerat numquam sit. Praesentium quod quia commodi
+                                reiciendis tempora cum vero at repellendus.
+                            </p>
+                        </div>
+                        <picture class="modalidade-img">
+                            <img src="" alt="">
+                        </picture>
+                    </section>
+
+
+
                 </section>
                 <!-- Modalidades - fim -->
 
@@ -133,6 +152,7 @@
     </div>
     <script src="./js/slide.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/modalidade.js"></script>
 </body>
 
 </html>
