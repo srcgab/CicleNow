@@ -7,7 +7,3 @@ menu.onclick = () => {
 }
 
 let modalidade = document.querySelector('.modalidade');
-
-modalidade.onclick = () => {
-    
-}
