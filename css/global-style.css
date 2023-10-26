@@ -1,10 +1,7 @@
 /* Estilização geral, container e wrapper*/
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Bungee+Shade&family=Jost:wght@300&family=Russo+One&display=swap');
 
-/* 
-font-family: 'Bungee Shade', sans-serif;
-font-family: 'Russo One', sans-serif; */
-
+/*font-family: 'Bungee Shade', sans-serif;*/
 
 * {
     margin: 0;
@@ -26,7 +23,7 @@ p {
 
 h1 {
     font-family: 'Russo One', sans-serif;
-    font-size: 32px;
+    font-size: 35px;
 }
 
 h2 {
@@ -35,12 +32,12 @@ h2 {
 }
 
 :root {
-    --primary: #15181C;
+    --primary: #fff;
     --light-blue: #87CEEB;
     --dark-blue: #0047AB;
     --green-primary: #44D62D;
     --green-secondary: #008000;
-    --outline: #2F3336;
+    --outline: #5a5a5a5b;
 
 }
 

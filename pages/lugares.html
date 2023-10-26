@@ -13,15 +13,20 @@
 </head>
 
 <body>
+    <style>
+        .mapa-img {
+            text-align: center;
+        }
+    </style>
     <div class="container">
         <div class="wrapper">
             <!-- Lado Esquerdo - início-->
             <div class="left-side">
                 <nav class="menu-lateral">
                     <a href="../index.html"><i class="fa-solid fa-house">Início</i></a>
-                    <a href="./historias.html"><i class="fa-solid fa-person-hiking">Inspiração</i></a>
-                    <a href="./store.html"><i class="fa-solid fa-cart-shopping">Loja</i></a>
-                    <a href="./lugares.html"><i class="fa-solid fa-map">Locais</i></a>
+                    <a href="./historias.html" target="_blank"><i class="fa-solid fa-person-hiking">Inspiração</i></a>
+                    <a href="./store.html" target="_blank"><i class="fa-solid fa-cart-shopping">Loja</i></a>
+                    <a href="./lugares.html" target="_blank"><i class="fa-solid fa-map">Locais</i></a>
                 </nav>
                 <section class="sobre">
                     <a href="./sobre.html"><i class="fa-solid fa-circle-info">Sobre</i></a>
@@ -38,10 +43,10 @@
 
                     <nav class="menu-desktop">
                         <a href="../index.html"><i class="fa-solid fa-house"></i></a>
-                        <a href="./histórias.html">Inspiração</a>
-                        <a href="./store.html">Loja</a>
-                        <a href="./lugares.html">Locais</a>
-                        <a href="./sobre.html">Sobre</a>
+                        <a href="./histórias.html" target="_blank">Inspiração</a>
+                        <a href="./store.html" target="_blank">Loja</a>
+                        <a href="./lugares.html" target="_blank">Locais</a>
+                        <a href="./sobre.html" target="_blank">Sobre</a>
                     </nav>
 
                     <div class="hamb">
@@ -49,16 +54,33 @@
                     </div>
                 </header>
 
+                <section class="mapa-container">
+                    <figure class="mapa-img">
+                        <img src="../image/mapa-brasil-removebg-preview.png" alt="" usemap="#mapabrasil">
+                    </figure>
+                    <map name="mapabrasil">
+                        <!-- Região Sul -->
+                        <area shape="rect" coords="248, 288, 249, 289" 
+                        href="https://pt.wikipedia.org/wiki/Paran%C3%A1" alt="RS" target="_blank">
+            
+                        <area shape="poly" coords="305, 315, 317, 309, 296, 267, 266, 294" 
+                        href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Sul" alt="SC" target="_blank">
+            
+                        <area shape="rect" coords="264, 263, 300, 299" 
+                        href="https://pt.wikipedia.org/wiki/Santa_Catarina" alt="PR" target="_blank">  
+                    
+                </section>
+
                 <!-- Menu Mobile - início -->
                 <div class="menu-mobile">
-                    <a href="./index.html"><i class="fa-solid fa-house"></i></a>
-                    <a href="./pages/histórias.html" target="_blank" rel="noopener noreferrer"><i
+                    <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+                    <a href="./histórias.html" target="_blank" rel="noopener noreferrer"><i
                             class="fa-solid fa-person-hiking"></i></a>
-                    <a href="./pages/store.html" target="_blank" rel="noopener noreferrer"><i
+                    <a href="./store.html" target="_blank" rel="noopener noreferrer"><i
                             class="fa-solid fa-cart-shopping"></i></a>
-                    <a href="./pages/lugares.html" target="_blank" rel="noopener noreferrer"><i
+                    <a href="./lugares.html" target="_blank" rel="noopener noreferrer"><i
                             class="fa-solid fa-map"></i></a>
-                    <a href="./pages/sobre.html" target="_blank" rel="noopener noreferrer"><i
+                    <a href="./sobre.html" target="_blank" rel="noopener noreferrer"><i
                             class="fa-solid fa-circle-info"></i></a>
                 </div>
                 <!-- Menu Mobile - fim -->
