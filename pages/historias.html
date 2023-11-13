@@ -4,36 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, min-scale=1.0">
-    <link rel="stylesheet" href="../css/global-style.css">
-    <link rel="shortcut icon" href="./image/image-removebg.ico" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="../image/image-removebg.ico" type="image/x-icon"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="../css/historias.css">
+    <link rel="stylesheet" href="../css/global-style.css">
     <title>Inspiração</title>
 </head>
 
 <body>
     <div class="container">
         <div class="wrapper">
-            <!-- Lado Esquerdo - início-->
-            <div class="left-side">
-                <nav class="menu-lateral">
-                    <a href="../index.html"><i class="fa-solid fa-house">Início</i></a>
-                    <a href="./historias.html" target="_blank"><i class="fa-solid fa-person-hiking">Inspiração</i></a>
-                    <a href="./store.html" target="_blank"><i class="fa-solid fa-cart-shopping">Loja</i></a>
-                    <a href="./lugares.html" target="_blank"><i class="fa-solid fa-map">Locais</i></a>
-                </nav>
-                <section class="sobre">
-                    <a href="./sobre.html" target="_blank"><i class="fa-solid fa-circle-info">Sobre</i></a>
-                </section>
-            </div>
-            <!-- Lado Esquerdo - fim -->
-
             <!-- Main - início -->
             <div class="container-main">
                 <header class="cabecalho">
                     <picture id="logo">
-                        <h1>LOGO</h1>
+                        <h1>CICLE NOW</h1>
                     </picture>
 
                     <nav class="menu-desktop">
@@ -45,9 +32,48 @@
                     </nav>
 
                     <div class="hamb">
-                        <i class=" fa-solid fa-bars fa-x " id="menu-icon"></i>
+                        <i class=" fa-solid fa-bars menu-hamb-icon"></i>
+                        <i class=" fa-solid fa-x menu-x-icon d-none"></i>
                     </div>
+
+    
+                    <nav class="menu-reduzido">
+                      <ul>
+                        <li class="menu-link">
+                          <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+                        </li>
+                        <li class="menu-link">
+                          <a href="./histórias.html" target="_blank">Inspiração</a>
+                        </li>
+                        <li class="menu-link">
+                          <a href="./store.html" target="_blank">Loja</a>
+                        </li>
+                        <li class="menu-link">
+                          <a href="./lugares.html" target="_blank">Locais</a>
+                        </li>
+                        <li class="menu-link">
+                          <a href="./sobre.html" target="_blank">Sobre</a>
+                        </li>
+                      </ul>
+                    </nav>
                 </header>
+
+                <section class="historias">
+                    <div>
+                        <h1>Precisando de um ânimo para pedalar?</h1>
+                        <h2>Conheça algumas histórias inspiradoras para ganhar um gás</h2>
+                    </div>
+                   
+                    <div id="imagens">
+                        <picture class="img-galeria"><img src="" alt=""></picture>
+                        <picture class="img-galeria"><img src="" alt=""></picture>
+                        <picture class="img-galeria"><img src="" alt=""></picture>
+                        <picture class="img-galeria"><img src="" alt=""></picture>
+                        <picture class="img-galeria"><img src="" alt=""></picture>
+                        <picture class="img-galeria"><img src="" alt=""></picture>        
+                    </div>
+                </section>
+                <!-- Main fim -->
 
                 <!-- Menu Mobile - início -->
                 <div class="menu-mobile">
@@ -66,7 +92,7 @@
             <!-- Main - fim -->
         </div>
     </div>
-    <script src="./js/menu.js"></script>
+    <script src="../js/historias.js"></script>
 </body>
 
 </html>

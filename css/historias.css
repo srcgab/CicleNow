@@ -1,0 +1,21 @@
+#imagens {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	gap: 15px;
+	
+	
+}
+
+.img-galeria {
+	background-color: rgb(255, 255, 255);
+	width: max(25px, min(320px, 22vw));
+    height: max(25px, min(320px, 22vw));
+	
+	
+}
+
+.img-galeria img {
+	width: max(25px, min(320px, 22vw));
+    height: max(25px, min(320px, 22vw));
+}

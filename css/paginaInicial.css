@@ -1,3 +1,4 @@
+/* Slides */
 .slides-container {
     width: min(1280px, 100%);
     height: 100%;
@@ -15,7 +16,7 @@
 
 .slide img {
     height: 100%;
-    width: 1200px;
+    width: 1280px;
     max-width: 100vw;
     object-fit: cover;
 }
@@ -33,7 +34,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: var(--light-blue);
+    opacity: 0.0;
     color: #fff;
     border: none;
     font-weight: bold;
@@ -83,25 +84,69 @@
 .modalidade {
     width: max(1.5rem, min(10rem, 22vw));
     height: max(1.5rem, min(10rem, 22vw));
-    border: 5px solid green;
-    background-color: grey;
+    border: 5px solid var(--green-secondary);
     border-radius: 100%;
     padding: 2px;
 
+    @media (max-width: 750px) {
+        border: 4px solid var(--green-secondary);
+    }
+
+    @media (max-width: 450px) {
+        border: 3px solid var(--green-secondary);
+    }
+
+}
+
+.modalidade img {
+    width: max(1.5rem, min(10rem, 22vw));
+    height: max(1.5rem, min(10rem, 22vw));
+    border-radius: 100%;
 }
 
 .modalidade-box {
     background-color: var(--light-blue);
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 10px;
-    height: 20em;
-    
+    padding: 15px;
 
+    @media (max-width: 750px) {
+        display: block;
+        
+    }
 }
 
-.modalidade-img {
-    background-color: grey;
-    width: 50rem;
-    height: 10rem;
+.box-text {
+    text-align: justify;
+    width: 60%;
+
+    @media (max-width: 750px) {
+        width: 100%;
+    }
+}
+
+.box-text h2 {
+    font-size: min(30px, 4vw);
+}
+
+.box-text p {
+    font-size: min(18px, 4vw);
+}
+
+.modalidade-img img {
+    @media (max-width: 750px) {
+        width: max(100%, min(10rem, 22vw));
+        height: max(80%, min(10rem, 22vw));
+    }
+
+    @media (max-width: 550px) {
+        padding: 5px 0px;
+    }
+
+   max-width: 450px;
+   border-radius: 10%;
+   padding: 15px;
+   
 }

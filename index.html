@@ -4,63 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, min-scale=1.0">
-    <link rel="stylesheet" href="./css/global-style.css">
-    <link rel="stylesheet" href="./css/paginaInicial.css">
     <link rel="shortcut icon" href="./image/image-removebg.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Cicle Now</title>
+    <link rel="stylesheet" href="./css/global-style.css">
+    <link rel="stylesheet" href="./css/paginaInicial.css">
+    <title>Cicle Now - Início</title>
 </head>
 
 <body>
     <div class="container">
         <div class="wrapper">
-            <!-- Lado Esquerdo - início-->
-            <div class="left-side">
-                <nav class="menu-lateral">
-                    <a href="./index.html"><i class="fa-solid fa-house">Início</i></a>
-                    <a href="./pages/historias.html"><i class="fa-solid fa-person-hiking">Inspiração</i></a>
-                    <a href="./pages/store.html"><i class="fa-solid fa-cart-shopping">Loja</i></a>
-                    <a href="./pages/lugares.html"><i class="fa-solid fa-map">Locais</i></a>
-                </nav>
-                <section class="sobre">
-                    <a href="./pages/sobre.html"><i class="fa-solid fa-circle-info">Sobre</i></a>
-                </section>
-            </div>
-            <!-- Lado Esquerdo - fim -->
-
             <!-- Main - início -->
             <div class="container-main">
                 <header class="cabecalho">
                     <picture id="logo">
-                        <h1>LOGO</h1>
+                        <h1>CICLE NOW</h1>
                     </picture>
 
                     <nav class="menu-desktop">
-                        <a href="./index.html"><i class="fa-solid fa-house"></i></a>
-                        <a href="./pages/histórias.html">Inspiração</a>
-                        <a href="./pages/store.html">Loja</a>
-                        <a href="./pages/lugares.html">Locais</a>
-                        <a href="./pages/sobre.html">Sobre</a>
+                        <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+                        <a href="./histórias.html" target="_blank">Inspiração</a>
+                        <a href="./store.html" target="_blank">Loja</a>
+                        <a href="./lugares.html" target="_blank">Locais</a>
+                        <a href="./sobre.html" target="_blank">Sobre</a>
                     </nav>
 
                     <div class="hamb">
-                        <i class=" fa-solid fa-bars fa-x " id="menu-icon"></i>
+                        <i class=" fa-solid fa-bars menu-hamb-icon"></i>
+                        <i class=" fa-solid fa-x menu-x-icon d-none"></i>
                     </div>
+
+    
+                    <nav class="menu-reduzido">
+                      <ul>
+                        <li class="menu-link">
+                          <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+                        </li>
+                        <li class="menu-link">
+                          <a href="./histórias.html" target="_blank">Inspiração</a>
+                        </li>
+                        <li class="menu-link">
+                          <a href="./store.html" target="_blank">Loja</a>
+                        </li>
+                        <li class="menu-link">
+                          <a href="./lugares.html" target="_blank">Locais</a>
+                        </li>
+                        <li class="menu-link">
+                          <a href="./sobre.html" target="_blank">Sobre</a>
+                        </li>
+                      </ul>
+                    </nav>
                 </header>
 
                 <!-- Banners - início-->
                 <section class="slides-container">
                     <div class="slide-content">
                         <div class="slide">
-                            <img src="./image/1.jpg" alt="">
+                            <img src="./image/banner1.png" alt="">
                         </div>
                         <div class="slide">
-                            <img src="./image/2.jpg" alt="">
+                            <img src="./image/banner2.png" alt="">
                         </div>
                         <div class="slide">
-                            <img src="./image/1.jpg" alt="">
+                            <img src="./image/banner3.png" alt="">
                         </div>
                     </div>
         
@@ -81,16 +89,16 @@
                 <section class="container-modalidade">
                     <div class="modalidade-content">
                         <picture class="modalidade" onclick="abrirSecao('box1')">
-                            <img src="" alt="">
+                            <img src="./image/modalidade-downhill.jpg" alt="">
                         </picture>
                         <picture class="modalidade" onclick="abrirSecao('box2')">
-                            <img src="" alt="">
+                            <img src="./image/modalidade-bmx.jpg" alt="">
                         </picture>
                         <picture class="modalidade" onclick="abrirSecao('box3')">
-                            <img src="" alt="">
+                            <img src="./image/modalidade-estrada.jpg" alt="">
                         </picture>
                         <picture class="modalidade" onclick="abrirSecao('box4')">
-                            <img src="" alt="">
+                            <img src="./image/modalidade-mountain-bike.jpg" alt="">
                         </picture>
                     </div>
 
@@ -107,7 +115,7 @@
                             </p>
                         </div>
                         <picture class="modalidade-img">
-                            <img src="" alt="">
+                            <img src="./image/modalidade-mountain-bike.jpg" alt="">
                         </picture>
                     </section>
 
@@ -124,7 +132,7 @@
                             </p>
                         </div>
                         <picture class="modalidade-img">
-                            <img src="" alt="">
+                            <!-- <img src="" alt=""> -->
                         </picture>
                     </section>
 
