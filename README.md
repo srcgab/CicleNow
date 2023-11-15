@@ -6,11 +6,17 @@
 
 > Projeto em desenvolvimento, criado por alunos do 1° período do curso de Ciência da Computação da Universidade Fumec.
 >
+> ## Finalizado:
+> - [x] Página "Inicial"
+> - [x] Página "Histórias"
+> - [x] Página "Loja" (sem responsividade)
+> - [x] Página "Sobre"
+> - [x] Landing page
 > ## Ainda falta fazer:
-> [] Responsividade da pagina da loja
-> [] Página de Lugares
-> [] Ajustar reponsividade da landingpage
-> [] Preencher o site com as imagens e os textos 
+> - [ ] Responsividade da pagina da loja
+> - [ ] Página de Lugares
+> - [ ] Ajustar reponsividade da landingpage
+> - [ ] Preencher o site com as imagens e os textos 
 
 
 
