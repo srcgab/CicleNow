@@ -1,9 +1,7 @@
 let menuBtn = document.querySelector('.hamb')
 const menuReduzido = document.querySelector('.menu-reduzido')
 const hambBtn = document.querySelector('.menu-hamb-icon')
-const fecharBtn = document.querySelector(
-  '.menu-x-icon'
-)
+const fecharBtn = document.querySelector('.menu-x-icon')
 const menuLinks = document.querySelectorAll('.menu-link')
 
 menuBtn.addEventListener('click', () => {
@@ -13,11 +11,13 @@ menuBtn.addEventListener('click', () => {
     menuReduzido.classList.add('menu-reduzido--active')
   }
   if (hambBtn.classList.contains('d-none')) {
+    hambBtn.classList.add('rotate-in')
     hambBtn.classList.remove('d-none')
     fecharBtn.classList.add('d-none')
   } else {
     hambBtn.classList.add('d-none')
     fecharBtn.classList.remove('d-none')
+
   }
 })
 

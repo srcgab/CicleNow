@@ -28,6 +28,11 @@
     width: 90%;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 500px) {
+        display: none;
+    }
+
+
 }
 
 .button-slide button {
@@ -44,7 +49,7 @@
     justify-content: center;
     column-gap: 1rem;
     position: relative;
-    bottom: 10px;
+    bottom: 2px;
     color: #fff;
     left: 0;
     width: 100%;
@@ -68,9 +73,13 @@
     width: 30px;
 }
 
+.slides-nav-container {
+    background-color: var(--light-blue);
+}
+
 /* Modalidades */
 .container-modalidade {
-    background-color: var(--primary);
+    background-color: #13181f;
 }
 
 .modalidade-content {
@@ -114,7 +123,6 @@
 
     @media (max-width: 750px) {
         display: block;
-        
     }
 }
 
@@ -149,4 +157,19 @@
    border-radius: 10%;
    padding: 15px;
    
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+    
+}
+
+.slide-in {
+    animation: slideIn .5s ease-in-out 0s normal 1 both;
+    transform: translateX(-150px)
 }

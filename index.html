@@ -24,11 +24,11 @@
                     </picture>
 
                     <nav class="menu-desktop">
-                        <a href="../index.html"><i class="fa-solid fa-house"></i></a>
-                        <a href="./histórias.html" target="_blank">Inspiração</a>
-                        <a href="./store.html" target="_blank">Loja</a>
-                        <a href="./lugares.html" target="_blank">Locais</a>
-                        <a href="./sobre.html" target="_blank">Sobre</a>
+                        <a href="./index.html"><i class="fa-solid fa-house"></i></a>
+                        <a href="./pages/historias.html" target="_blank">INSPIRAÇÃO</a>
+                        <a href="./pages/store.html" target="_blank">LOJA</a>
+                        <a href="./pages/lugares.html" target="_blank">LOCAIS</a>
+                        <a href="./pages/sobre.html" target="_blank">SOBRE</a>
                     </nav>
 
                     <div class="hamb">
@@ -36,23 +36,26 @@
                         <i class=" fa-solid fa-x menu-x-icon d-none"></i>
                     </div>
 
-    
                     <nav class="menu-reduzido">
-                      <ul>
+                      <ul class="menu-reduzido-ul">
                         <li class="menu-link">
-                          <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+                          <a href="./index.html"><i class="fa-solid fa-house"></i> Início</a>
                         </li>
                         <li class="menu-link">
-                          <a href="./histórias.html" target="_blank">Inspiração</a>
+                          <a href="./pages/historias.html" target="_blank"><i
+                            class="fa-solid fa-person-hiking"></i> Inspiração</a>
                         </li>
                         <li class="menu-link">
-                          <a href="./store.html" target="_blank">Loja</a>
+                          <a href="./pages/store.html" target="_blank"><i
+                            class="fa-solid fa-cart-shopping"></i> Loja</a>
                         </li>
                         <li class="menu-link">
-                          <a href="./lugares.html" target="_blank">Locais</a>
+                          <a href="./pages/lugares.html" target="_blank"><i
+                            class="fa-solid fa-map"></i> Locais</a>
                         </li>
-                        <li class="menu-link">
-                          <a href="./sobre.html" target="_blank">Sobre</a>
+                        <li class="menu-link" id="sobre">
+                          <a href="./pages/sobre.html" target="_blank"><i
+                            class="fa-solid fa-circle-info"></i> Sobre</a>
                         </li>
                       </ul>
                     </nav>
@@ -77,11 +80,13 @@
                         <button id="next">></button>
                     </div>
 
-                    <ul class="slides-nav">
-                        <li class="active"></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                    <section class="slides-nav-container">
+                        <ul class="slides-nav">
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </section>
                 </section>
                 <!-- Banners - fim-->
 
@@ -95,16 +100,16 @@
                             <img src="./image/modalidade-bmx.jpg" alt="">
                         </picture>
                         <picture class="modalidade" onclick="abrirSecao('box3')">
-                            <img src="./image/modalidade-estrada.jpg" alt="">
+                            <img src="./image/modalidade-mountain-bike.jpg" alt="">
                         </picture>
                         <picture class="modalidade" onclick="abrirSecao('box4')">
-                            <img src="./image/modalidade-mountain-bike.jpg" alt="">
+                            <img src="./image/modalidade-estrada.jpg" alt="">
                         </picture>
                     </div>
 
-                    <section class="modalidade-box" id="box1">
+                    <section class="modalidade-box slide-in" id="box1" style="display:none;">
                         <div class="box-text">
-                            <h2>Ciclismo na terra fds</h2>
+                            <h2>Down Hill</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae praesentium fuga consequatur!
                                 Ab magnam nisi recusandae aperiam quaerat numquam sit. Praesentium quod quia commodi
                                 reiciendis tempora cum vero at repellendus.
@@ -115,13 +120,13 @@
                             </p>
                         </div>
                         <picture class="modalidade-img">
-                            <img src="./image/modalidade-mountain-bike.jpg" alt="">
+                            <img src="./image/modalidade-downhill.jpg" alt="Modlidade down hill">
                         </picture>
                     </section>
 
-                    <section class="modalidade-box" id="box2" style="display:none;">
+                    <section class="modalidade-box slide-in" id="box2" style="display:none">
                         <div class="box-text">
-                            <h2>Ciclismo no asfalto AAA</h2>
+                            <h2>BMX</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae praesentium fuga consequatur!
                                 Ab magnam nisi recusandae aperiam quaerat numquam sit. Praesentium quod quia commodi
                                 reiciendis tempora cum vero at repellendus.
@@ -132,7 +137,41 @@
                             </p>
                         </div>
                         <picture class="modalidade-img">
-                            <!-- <img src="" alt=""> -->
+                            <img src="image/modalidade-bmx.jpg" alt="Modalidade BMX">
+                        </picture>
+                    </section>
+
+                    <section class="modalidade-box slide-in" id="box3" style="display:none">
+                        <div class="box-text">
+                            <h2>Mountain Bike</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae praesentium fuga consequatur!
+                                Ab magnam nisi recusandae aperiam quaerat numquam sit. Praesentium quod quia commodi
+                                reiciendis tempora cum vero at repellendus.
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae praesentium fuga consequatur!
+                                Ab magnam nisi recusandae aperiam quaerat numquam sit. Praesentium quod quia commodi
+                                reiciendis tempora cum vero at repellendus.
+                            </p>
+                        </div>
+                        <picture class="modalidade-img">
+                            <img src="image/modalidade-mountain-bike.jpg" alt="Modalidade mountain bike">
+                        </picture>
+                    </section>
+
+                    <section class="modalidade-box slide-in" id="box4" style="display:none">
+                        <div class="box-text">
+                            <h2>Ciclsimo de Estrada</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae praesentium fuga consequatur!
+                                Ab magnam nisi recusandae aperiam quaerat numquam sit. Praesentium quod quia commodi
+                                reiciendis tempora cum vero at repellendus.
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae praesentium fuga consequatur!
+                                Ab magnam nisi recusandae aperiam quaerat numquam sit. Praesentium quod quia commodi
+                                reiciendis tempora cum vero at repellendus.
+                            </p>
+                        </div>
+                        <picture class="modalidade-img">
+                            <img src="image/modalidade-estrada.jpg" alt="Modalidade ciclismo de estrada">
                         </picture>
                     </section>
 
@@ -144,13 +183,13 @@
                 <!-- Menu Mobile - início -->
                 <div class="menu-mobile">
                     <a href="./index.html"><i class="fa-solid fa-house"></i></a>
-                    <a href="./pages/histórias.html" target="_blank" rel="noopener noreferrer"><i
+                    <a href="./pages/historias.html" rel="noopener noreferrer"><i
                             class="fa-solid fa-person-hiking"></i></a>
-                    <a href="./pages/store.html" target="_blank" rel="noopener noreferrer"><i
+                    <a href="./pages/store.html"  rel="noopener noreferrer"><i
                             class="fa-solid fa-cart-shopping"></i></a>
-                    <a href="./pages/lugares.html" target="_blank" rel="noopener noreferrer"><i
+                    <a href="./pages/lugares.html"  rel="noopener noreferrer"><i
                             class="fa-solid fa-map"></i></a>
-                    <a href="./pages/sobre.html" target="_blank" rel="noopener noreferrer"><i
+                    <a href="./pages/sobre.html"  rel="noopener noreferrer"><i
                             class="fa-solid fa-circle-info"></i></a>
                 </div>
                 <!-- Menu Mobile - fim -->
@@ -158,8 +197,8 @@
             <!-- Main - fim -->
         </div>
     </div>
-    <script src="./js/slide.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/slide.js"></script>
     <script src="./js/modalidade.js"></script>
 </body>
 
