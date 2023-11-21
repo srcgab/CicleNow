@@ -1,0 +1,109 @@
+.container-main {
+  height: 100vh;
+}
+
+.mapa-container{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+svg{
+  width: 40%;
+}
+.norte {
+  fill: #63ab3f;
+}
+.nordeste {
+  fill: #f0b541;
+}
+.centro-oeste {
+  fill: #ffae70;
+}
+.sudeste {
+  fill: #4fa4b8;
+}
+.sul {
+  fill: #686f99;
+}
+
+path {
+  fill: #1da1f2;
+  stroke: white;
+  stroke-width: 1px;
+}
+
+path:hover {
+  fill: rgb(46, 86, 172);
+  stroke: rgb(20, 0, 134);
+  stroke-width: 2px;
+  transition: fill 0.4s;
+}
+
+/* .tooltip {
+  pointer-events: none;
+  position: absolute;
+  font-size: 18px;
+  text-align: center;
+  background: white;
+  padding: 10px 15px;
+  z-index: 5;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 auto;
+  color: #21669e;
+  border-radius: 5px;
+  transform: translateX(-50%);
+}
+.tooltip.active {
+  display: block;
+} */
+.tabela:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 0;
+  height: 0;
+  margin-left: -10px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid white;
+}
+
+.box {
+  width: 30vw;
+  height: 50vh;
+  
+}
+
+.tabela {
+  width: 100%;
+  height: 50%;
+  display: none;
+
+}
+
+.tabela.active {
+  display: block;
+}
+
+.tabela table {
+  width: 90%;
+  height: 90%;
+  background-color: #21669e;
+  border: black 1px solid;
+  margin: 10px;
+}
+
+td {
+  margin: 0.5px;
+  border: black 1px solid;
+}
+
+.maps {
+  width: 100%;
+  height: 50%;
+}
