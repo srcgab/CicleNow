@@ -4,9 +4,16 @@ h2, p{
 
 #imagens {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	justify-items: center;
-	gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    height: 100vh;
+    padding-top: 5%;
+    align-content: space-evenly;
+    justify-items: center;
+
+	@media(max-width: 750px){
+		grid-template-columns: repeat(2, 1fr);
+	}
 	
 }
 

@@ -77,7 +77,8 @@ a {
 }
 
 img{
-    width: 580px;
+    width: 460px;
+    padding-left: 120px;
 }
 
 form{
