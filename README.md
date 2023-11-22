@@ -15,7 +15,7 @@
 > ## Ainda falta fazer:
 > - [ ] Responsividade da pagina da loja
 > - [ ] Página de Lugares
-> - [ ] Ajustar reponsividade da landingpage
+> - [x] Ajustar reponsividade da landingpage
 > - [ ] Preencher o site com as imagens e os textos 
 
 
