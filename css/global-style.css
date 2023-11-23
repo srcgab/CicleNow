@@ -39,6 +39,7 @@ html, body {
 h1 {
     font-family: 'Russo One', sans-serif;
     font-size: 35px;
+    color: #fff;
 }
 
 h2 {
@@ -49,6 +50,7 @@ h2 {
 p {
     font-family: 'Jost', sans-serif;
     font-size: 18px;
+    color: #fff;
 }
 
 a {
@@ -57,12 +59,13 @@ a {
 
 :root {
     --primary: #fff;
-    --light-blue: #016a95;
-    --dark-blue: #0047AB;
-    --green-primary: #44D62D;
-    --green-secondary: #c0ff72;
+    --light-blue: #143d59;
+    --dark-blue: #143d59;
+    --green-primary: #F4B41A;
+    --green-secondary: #F4B41A;
     --outline: #5a5a5a5b;
-    --black: #000; 
+    --black: #000;
+    --light-blue-secondary: #2f7cb1; 
 }
 
 .container {
@@ -96,6 +99,7 @@ header {
 
 #logo {
     text-align: center;
+    color: #fff;
     @media (max-width: 1000px) and (min-width: 501px) {
         padding-right: 15px;
     }
@@ -110,7 +114,7 @@ header {
 }
 
 .menu-desktop a {
-    color: var(--black);
+    color: #fff;
     font-size: 1.3rem;
     font-weight: 500;
     padding: 2px 0;
@@ -144,7 +148,7 @@ header {
 .menu-mobile i {
     font-size: 15px;
     cursor: pointer;
-    color: rgb(0, 0, 0);
+    color: #fff;
 }
 
 .menu-mobile i:active {
@@ -266,5 +270,7 @@ header {
         opacity: 1;
         transform: rotate(0);
     }
-}
+    
+    }
+
   
