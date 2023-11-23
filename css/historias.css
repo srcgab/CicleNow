@@ -103,15 +103,15 @@ aside img {
 	position: relative;
     max-width: 475px;
     padding: 15px;
-    border-right: 5px solid #44d62d;
-	border-bottom: 5px solid #44d62d;
+    border-right: 5px solid #f4b41a;
+	border-bottom: 5px solid #f4b41a;
     background-color: #142441;
     box-shadow: 0px -px 6px #4f574e;
     overflow: hidden;
 
 	@media (max-width: 750px) {
 		width: 70vw;
-		border-top: 1px solid #44d62d
+		border-top: 1px solid #f4b41a
 	}
   }
 
@@ -125,7 +125,7 @@ aside img {
 			height: 0;
 			border-style: solid;
 			border-width: 100px 100px 0px 0px;
-			border-color: #44d62d transparent transparent transparent;
+			border-color: #f4b41a transparent transparent transparent;
 			transform: rotate(45deg);
 		
 	}
