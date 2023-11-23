@@ -53,7 +53,7 @@ aside {
 	transform: translateX(100%); 
 	overflow-y: auto;
 
-	background: linear-gradient(45deg, #fc466b, #3f5efb, #5cb4fc, #3f5efb);
+	background: linear-gradient(45deg, #382db1, #113259, #1d496d, #3f5efb);
 	background-size: 400% 400%;
 	animation: gradientBG 15s ease infinite;
 }
@@ -73,6 +73,7 @@ aside img {
 
 #aside-texto {
 	color: black;
+	text-align: justify;
 }
 
 .img-galeria {
