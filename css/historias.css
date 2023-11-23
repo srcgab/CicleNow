@@ -2,6 +2,11 @@ h2, p{
 	color: white;
 }
 
+h2 {
+	text-align: center;
+	margin: 2%;
+  }
+
 #imagens {
 	display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -25,17 +30,11 @@ h2, p{
 	flex: 1;
 	margin: 10px;
 	cursor: pointer;
-	width: max(25px, min(320px, 22vw));
-    height: max(25px, min(320px, 22vw));
 }
 
 .img-galeria img {
-	width: max(25px, min(320px, 22vw));
-    height: max(25px, min(320px, 22vw));
-}
-
-aside.active + .container-imagens{
-	transform: translateX(-30%);
+	width: max(25px, min(320px, 35vw));
+    height: max(25px, min(320px, 35vw));
 }
 
 aside {
@@ -45,17 +44,24 @@ aside {
 	right: 0;
 	width: 55%;
 	height: 100%;
-	background-color: #f2f2f2;
 	padding: 20px;
 	box-sizing: border-box;
 	visibility: hidden;
 	opacity: 0;
 	transition: visibility 0s, opacity 0.5s ease-in-out;
+	transition: transform 0.4s ease-in-out;
+	transform: translateX(100%); 
+	overflow-y: auto;
+
+	background: linear-gradient(45deg, #fc466b, #3f5efb, #5cb4fc, #3f5efb);
+	background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite;
 }
 
 aside.active {
 	visibility: visible;
 	opacity: 1;
+	transform: translateX(0);
 }
 
 aside img {
@@ -68,3 +74,59 @@ aside img {
 #aside-texto {
 	color: black;
 }
+
+.img-galeria {
+	transition: transform 0.4s ease-in-out;
+  }
+  
+  .img-galeria:hover {
+	transform: scale(1.1); 
+	opacity: 0.5;
+  }
+  
+  @keyframes gradientBG {
+	0% {
+	  background-position: 0% 50%;
+	}
+	50% {
+	  background-position: 100% 50%;
+	}
+	100% {
+	  background-position: 0% 50%;
+	}
+  }
+  
+
+
+  .citacao {
+	position: relative;
+    max-width: 475px;
+    padding: 15px;
+    border-right: 5px solid #44d62d;
+	border-bottom: 5px solid #44d62d;
+    background-color: #142441;
+    box-shadow: 0px -px 6px #4f574e;
+    overflow: hidden;
+
+	@media (max-width: 750px) {
+		width: 70vw;
+		border-top: 1px solid #44d62d
+	}
+  }
+
+	@media (min-width: 750px) {
+		.citacao::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			right: 10px;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 100px 100px 0px 0px;
+			border-color: #44d62d transparent transparent transparent;
+			transform: rotate(45deg);
+		
+	}
+  
+  
