@@ -5,14 +5,8 @@
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     list-style: none;
-    
 }
 
-h1 {
-    @media (max-width: 750px) {
-        display: none;
-    }
-}
 
 .background{
     background-image: url(../image/loja/img-loja-1.png);
@@ -41,11 +35,14 @@ header{
     padding: 14px 10%;
 }
 
-
 .logo{
     font-weight: 500;
     font-size: 1rem;
-    color: #fff;
+    color: #f4b41a;
+
+    @media (max-width: 750px) {
+        display: none;
+    }
 }
 
 .cabecalho-link{
@@ -78,18 +75,8 @@ header{
 
 .Meio{
     padding: 7rem 0 0 4rem;
-    line-height: 4rem;
 }
 
-.Meio h1{
-    font-size: 4rem;
-    color: #222222;
-    
-}
-
-.btn-colecoes {
-    padding-top: 25%;
-}
 
 .Meio button{
     background-color: #f4b41a;
@@ -97,16 +84,34 @@ header{
     border: none;
     border-radius: 5px;
     color: #fff;
-   font-size: 1rem;
-   cursor: pointer;
-   transition: 0.3s;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 20% 0%;
 }
-a:active{
+.Meio button a{
     color: #fff;
 }
+
 .Meio button:hover{
-      background-color: #143d59;
+      background-color: #000;
       transform: scaleY(1.2);
+}
+
+.titulo-n1 {
+    width: 15%;
+    font-size: 4rem;
+    color: #222222;
+
+    text-shadow: 5px 2px #f4b41a;
+
+    @media (max-width: 750px) {
+        font-size: 3rem;
+    }
+
+    @media (max-width: 550px) {
+        font-size: 2rem;
+    }
 }
 
 section{
