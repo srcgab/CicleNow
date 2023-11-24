@@ -65,10 +65,8 @@ button {
   top: calc(100% + 1.5rem);
   height: 5px;
   width: 3rem;
-  background: #0062b9;
+  background: #fff;
   left: 50%;
-  transform: translateX(-50%);
-  border-radius: 5px; 
 
   @media only screen and (max-width: 37.5em) {
       top: calc(100% + 1.2rem);
@@ -186,7 +184,7 @@ p {
   }
 
   .sociais {
-    width: 5rem; 
+    width: 3rem; 
   
   }
   .link-social {

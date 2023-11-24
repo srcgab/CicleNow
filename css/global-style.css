@@ -202,7 +202,7 @@ header {
 .menu-x-icon {
     font-weight: bold;
     font-size: 25px;
-    color: aliceblue;
+    color: #143d59;
 }
 
 
@@ -215,11 +215,12 @@ header {
 }
 
 .menu-link:hover {
-    background-color: #0047AB;
+    background-color: #fff;
 }
 
 .menu-link a {
     text-decoration: none;
+    color: #143d59;
 }
 
 .menu-reduzido-ul {
@@ -227,7 +228,7 @@ header {
 }
   
 .menu-reduzido {
-    background: #030327;
+    background: #f4b41a;
     color: #fff;
     position: absolute;
     width: 25vw;

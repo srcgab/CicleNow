@@ -55,7 +55,7 @@ path:hover {
 .box {
   margin: 5%;
   width: 30vw;
-  background-color: #21669e8a;
+  background-color: #ffd677cd;
   border: black 1px;
   border-radius: 5%;
 
@@ -98,11 +98,15 @@ td {
   margin: 0.5px;
   border: black 1px solid;
   background-color: aliceblue;
+  font-size: 15px;
 }
 
 td a {
-  font-size: 10px;
-  text-align: center;
+  font-size: 15px;
+  color: #f4b41a;
+  padding-left: 5px;
+
+  
 }
 
 .maps {
